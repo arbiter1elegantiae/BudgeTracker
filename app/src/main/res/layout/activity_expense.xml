@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:background="@color/colorAccentTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textview4"
+            android:textColor="@android:color/white"
+            android:textSize="50dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="30dp"
+            />
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layoutTop" >
+    </RelativeLayout>
+
+
+    <com.example.senso.budgetracker.CircularTextView
+        android:id="@+id/circularTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutBottom"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="-65dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/delete"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/point"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:id="@+id/location"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/point"
+            android:src="@drawable/location_size_icon_expense"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/delete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/point"
+            android:layout_toEndOf="@+id/point"
+            android:src="@drawable/delete_size_icon"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

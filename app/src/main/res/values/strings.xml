@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BudgeTracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="add_expense">Aggiungi Spesa</string>
+    <string name="action_settings">Ricomincia da capo</string>
+    <string-array name="period_array">
+        <item>Settimanale</item>
+        <item>Mensile</item>
+    </string-array>
+    <string name="title_activity_locations">Le tue spese</string>
+
+</resources>

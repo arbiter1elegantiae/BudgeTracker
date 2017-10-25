@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Registra una Spesa Periodica"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/name_expense"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Dai un nome alla tua spesa"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/cost_expense"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Quanto spendi?"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/description_exprense"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:breakStrategy="balanced"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:hint="Una descrizione"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/date_button"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:onClick="showDatePickerDialog"
+        android:text="Periodo" />
+
+    <Button
+        android:id="@+id/category_btn"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:onClick="choseCategory"
+        android:text="Categoria" />
+
+    <Button
+        android:id="@+id/store_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Registra"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>
